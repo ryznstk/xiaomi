@@ -322,6 +322,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+TARGET_PROVIDES_POWERHAL := true
+
 # QSPA
 PRODUCT_PACKAGES += \
     vendor.qti.qspa-service \
