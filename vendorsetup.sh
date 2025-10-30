@@ -48,6 +48,10 @@ rm -rf packages/apps/DepthWallpaperHelper
 
 rm -rf packages/apps/XiaomiParts
 
+# ViperFX
+rm -rf packages/apps/ViPER4AndroidFX
+git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
+
 # KProfiles (fresh clone)
 echo "Cloning KProfiles..."
 rm -rf packages/apps/KProfiles
