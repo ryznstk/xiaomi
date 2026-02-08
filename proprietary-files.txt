@@ -1795,6 +1795,7 @@ vendor/lib64/libcppbor_external.so:vendor/lib64/libcppbor_peridot.so;FIX_SONAME
 vendor/lib64/libjc_keymint_nxp.so
 vendor/lib64/libjc_keymint_transport_nxp.so
 vendor/lib64/libqtikeymint.so
+vendor/bin/KmInstallKeybox
 
 # Listen
 odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so
