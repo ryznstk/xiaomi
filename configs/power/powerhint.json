@@ -1,6 +1,7 @@
 {
   "Nodes": [
     {
+<<<<<<< HEAD
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
@@ -121,6 +122,8 @@
       "Type": "Property"
     },
     {
+=======
+>>>>>>> 31af78c (peridot: Drop new powerhint by qcom configs)
       "Name": "PowerHALRenderingState",
       "Path": "vendor.powerhal.rendering",
       "Values": [
@@ -128,6 +131,7 @@
         ""
       ],
       "Type": "Property"
+<<<<<<< HEAD
     },
     {
       "Name": "SleepDisabled",
@@ -146,10 +150,13 @@
         "1"
       ],
       "DefaultIndex": 0
+=======
+>>>>>>> 31af78c (peridot: Drop new powerhint by qcom configs)
     }
   ],
   "Actions": [
     {
+<<<<<<< HEAD
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "PowerHALMainState",
       "Duration": 0,
@@ -228,10 +235,13 @@
       "Value": "10000"
     },
     {
+=======
+>>>>>>> 31af78c (peridot: Drop new powerhint by qcom configs)
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
       "Duration": 0,
       "Value": "EXPENSIVE_RENDERING"
+<<<<<<< HEAD
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -241,3 +251,8 @@
     }
   ]
 }
+=======
+    }
+  ]
+}
+>>>>>>> 31af78c (peridot: Drop new powerhint by qcom configs)
