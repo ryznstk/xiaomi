@@ -91,3 +91,5 @@ remote_provisioning.hostname=remoteprovisioning.googleapis.com
 
 # Disable RescueParty due to high risk of data loss
 persist.sys.disable_rescue=true
+
+ro.lunaris.maintainer=BLU
