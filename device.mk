@@ -366,7 +366,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureOverlayPeridot \
     CarrierConfigOverlayPeridot \
-    FrameworverlayPeridot \
+    FrameworkOverlayPeridot \
     LineageDialerOverlayPeridot \
     LineageSDKOverlayPeridot \
     LineageSettingsOverlayPeridot \
