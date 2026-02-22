@@ -29,8 +29,6 @@ git clone -b dolby https://github.com/ryznstk/hardware_xiaomi.git hardware/xiaom
 
 rm -rf packages/apps/XiaomiDolby
 
-rm -rf packages/apps/KProfiles
-
 # MiuiCamera device tree (fresh clone)
 echo "Cloning MiuiCamera device tree..."
 rm -rf device/xiaomi/peridot-miuicamera
@@ -52,6 +50,11 @@ rm -rf packages/apps/LMOFreeform
 git clone https://github.com/ryznstk/packages_apps_LMOFreeforms.git packages/apps/LMOFreeform
 
 rm -rf packages/apps/DepthWallpaperHelper
+
+# Part
+echo "Cloning Parts tree..."
+rm -rf packages/apps/XiaomiParts
+git clone https://github.com/ryznstk/packages_apps_XiaomiParts.git packages/apps/XiaomiParts
 
 cd system/sepolicy
 git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
