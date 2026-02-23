@@ -82,7 +82,7 @@ git reset --hard FETCH_HEAD
 croot
 
 cd packages/apps/Launcher3
-git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 test
+git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 16.2
 git reset --hard FETCH_HEAD
 croot
 
