@@ -67,7 +67,7 @@ git reset --hard FETCH_HEAD
 croot
 
 cd device/lineage/sepolicy
-git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy 16.2
+git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy test
 git reset --hard FETCH_HEAD
 croot
 
