@@ -66,51 +66,6 @@ git fetch https://github.com/ryznstk/build_soong 16.2
 git reset --hard FETCH_HEAD
 croot
 
-cd device/lineage/sepolicy
-git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy test
-git reset --hard FETCH_HEAD
-croot
-
-cd frameworks/av
-git fetch https://github.com/Lunaris-AOSP/frameworks_av test
-git reset --hard FETCH_HEAD
-croot
-
-cd frameworks/base
-git fetch https://github.com/Lunaris-AOSP/frameworks_base test
-git reset --hard FETCH_HEAD
-croot
-
-cd packages/apps/Launcher3
-git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 test
-git reset --hard FETCH_HEAD
-croot
-
-cd packages/apps/Settings
-git fetch https://github.com/ryznstk/packages_apps_Settings test
-git reset --hard FETCH_HEAD
-croot
-
-cd packages/apps/Singularity
-git fetch https://github.com/Lunaris-AOSP/packages_apps_Singularity test
-git reset --hard FETCH_HEAD
-croot
-
-cd system/core
-git fetch https://github.com/Lunaris-AOSP/system_core test
-git reset --hard FETCH_HEAD
-croot
-
-cd vendor/lineage
-git fetch https://github.com/Lunaris-AOSP/vendor_lineage test
-git reset --hard FETCH_HEAD
-croot
-
-cd vendor/extras
-git fetch https://github.com/Lunaris-AOSP/vendor_extras test
-git reset --hard FETCH_HEAD
-croot
-
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
 git reset --hard FETCH_HEAD
