@@ -66,6 +66,11 @@ git fetch https://github.com/ryznstk/build_soong 16.2
 git reset --hard FETCH_HEAD
 croot
 
+cd packages/apps/Settings
+git fetch https://github.com/ryznstk/packages_apps_Settings test
+git reset --hard FETCH_HEAD
+croot
+
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
 git reset --hard FETCH_HEAD
