@@ -19,7 +19,7 @@ git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xi
 # Hardware xiaomi (fresh clone)
 echo "Cloning hardware xiaomi source..."
 rm -rf hardware/xiaomi
-git clone -b lineage-23.2 https://github.com/ryznstk/android_hardware_xiaomi.git hardware/xiaomi
+git clone -b dolby https://github.com/ryznstk/hardware_xiaomi.git hardware/xiaomi
 
 rm -rf packages/apps/XiaomiDolby
 
@@ -45,10 +45,13 @@ git clone https://github.com/ryznstk/packages_apps_LMOFreeforms.git packages/app
 
 rm -rf packages/apps/DepthWallpaperHelper
 
-# Part
-echo "Cloning Parts tree..."
+
 rm -rf packages/apps/XiaomiParts
-git clone https://github.com/ryznstk/packages_apps_XiaomiParts.git packages/apps/XiaomiParts
+
+# KProfiles (fresh clone)
+echo "Cloning KProfiles..."
+rm -rf packages/apps/KProfiles
+git clone https://github.com/droidcore/packages_apps_KProfiles.git packages/apps/KProfiles
 
 cd system/sepolicy
 git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
