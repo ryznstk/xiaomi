@@ -27,7 +27,6 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
-    'packages/apps/XiaomiParts'
 ]
 
 def lib_fixup_odm_suffix(lib: str, partition: str, *args, **kwargs):
