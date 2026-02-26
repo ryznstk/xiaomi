@@ -5,3 +5,6 @@ allow hal_power_default sysfs_gpu:file { read write open };
 allow hal_power_default sysfs_gpu:dir { search };
 
 allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
+
+allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
+
