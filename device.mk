@@ -31,6 +31,7 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 # ART
 PRODUCT_ENABLE_UFFD_GC := true
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Viper4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
