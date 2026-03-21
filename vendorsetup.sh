@@ -8,10 +8,10 @@ git clone -b lineage-23.2 https://gitlab.com/blu96/proprietary-vendor-xiaomi-per
 # Kernel source (fresh clone)
 echo "Cloning kernel source tree..."
 rm -rf kernel/xiaomi/sm8635
-git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635 kernel/xiaomi/sm8635
+git clone -b lmkrb --depth 1 https://gitlab.com/blu96/kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
 
 rm -rf kernel/xiaomi/sm8635-modules
-git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-modules kernel/xiaomi/sm8635-modules
+git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
 
 rm -rf kernel/xiaomi/sm8635-devicetrees
 git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
@@ -128,6 +128,8 @@ cd vendor/extras
 git fetch https://github.com/Lunaris-AOSP/vendor_extras test
 git reset --hard FETCH_HEAD
 croot
+
+git clone -b 16.2 https://github.com/Lunaris-AOSP/toolchain_pgo-profiles toolchain/pgo-profiles
 
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
