@@ -129,7 +129,10 @@ git fetch https://github.com/Lunaris-AOSP/vendor_extras test
 git reset --hard FETCH_HEAD
 croot
 
-git clone -b 16.2 https://github.com/Lunaris-AOSP/toolchain_pgo-profiles toolchain/pgo-profiles
+cd toolchain/pgo-profiles
+git fetch https://github.com/Lunaris-AOSP/toolchain_pgo-profiles 16.2
+git reset --hard FETCH_HEAD
+croot
 
 cd device/qcom/sepolicy_vndr/sm8650
 git fetch https://github.com/LineageOS/android_device_qcom_sepolicy_vndr.git lineage-23.2-caf-sm8650
