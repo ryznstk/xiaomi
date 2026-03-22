@@ -1,0 +1,74 @@
+<compatibility-matrix version="1.0" type="framework" level="8">
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qconfig.IQConfig</name>
+        <interface>
+            <name>IQConfig</name>
+            <instance>default</instance>
+            <version>5</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.aidlbgservice.IBGService</name>
+        <interface>
+            <name>IBGService</name>
+            <instance>default</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.aon.IAlwaysOn</name>
+        <interface>
+            <name>IAlwaysOn</name>
+            <instance>miaonservicehal</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.display.mihwcextension.IMiHwcExtension</name>
+        <interface>
+            <name>IMiHwcExtension</name>
+            <instance>default</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.displayfeature_aidl.IDisplayFeature</name>
+        <interface>
+            <name>IDisplayFeature</name>
+            <instance>default</instance>
+            <version>2</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel</name>
+        <interface>
+            <name>IMiFxTunnel</name>
+            <instance>default</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mlipay.IMlipayService</name>
+        <interface>
+            <name>IMlipayService</name>
+            <instance>default</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.quickcamera.IQuickCameraService</name>
+        <interface>
+            <name>IQuickCameraService</name>
+            <instance>default</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.sensor.citsensorservice.ICitSensorService</name>
+        <interface>
+            <name>ICitSensorService</name>
+            <instance>default</instance>
+            <version>1</version>
+        </interface>
+    </hal>
+</compatibility-matrix>
