@@ -92,6 +92,14 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace('xml=version', 'xml version'),
     (
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.gainmap.so',
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so',
+    ): blob_fixup()
+        .replace_needed(
+            'libultrahdr.so',
+            'libultrahdr_prebuilt.so'
+    ),
+    (
         'odm/lib64/hw/camera.qcom.so',
         'odm/lib64/hw/com.qti.chi.override.so',
         'odm/lib64/libchifeature2.so',
@@ -257,6 +265,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+        'odm/lib64/libsnpe_config.so': blob_fixup()
+        .add_needed('liblog.so'),
     (
         'odm/lib64/libaudioroute_ext.so',
         'vendor/lib64/libagm.so',
@@ -284,6 +294,15 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libbinder_shim.so')
         .add_needed('libhidlbase_shim.so'),
+        'vendor/lib64/libultrahdr_prebuilt.so': blob_fixup()
+        .replace_needed(
+            'libjpegdecoder.so',
+            'libjpegdecoder_prebuilt.so'
+        )
+        .replace_needed(
+            'libjpegencoder.so',
+            'libjpegencoder_prebuilt.so'
+    ),
     (
         'vendor/lib64/libVoiceSdk.so',
         'vendor/lib64/libcapiv2uvvendor.so',
