@@ -26,7 +26,7 @@ PRODUCT_SYSTEM_DEVICE := peridot
 # Flags
 TARGET_DISABLE_EPPE := true
 # Lineage
-WITH_GMS := true
+WITH_GMS := false
 TARGET_OPTIMIZED_DEXOPT := true
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
