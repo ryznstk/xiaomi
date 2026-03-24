@@ -114,10 +114,10 @@ git fetch https://github.com/ryznstk/packages_apps_Settings test
 git reset --hard FETCH_HEAD
 croot
 
-#cd packages/apps/Singularity 
-#git fetch https://github.com/Lunaris-AOSP/packages_apps_Singularity test
-#git reset --hard FETCH_HEAD
-#croot
+cd packages/apps/Singularity 
+git fetch https://github.com/Lunaris-AOSP/packages_apps_Singularity test
+git reset --hard FETCH_HEAD
+croot
 
 #cd vendor/lineage
 #git fetch https://github.com/Lunaris-AOSP/vendor_lineage 16.2
