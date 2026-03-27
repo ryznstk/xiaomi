@@ -99,10 +99,15 @@ croot
 #git reset --hard FETCH_HEAD
 #croot
 
-#cd frameworks/base
-#git fetch https://github.com/Lunaris-AOSP/frameworks_base test
-#git reset --hard FETCH_HEAD
-#croot
+cd frameworks/base
+git fetch https://github.com/Lunaris-AOSP/frameworks_base test
+git reset --hard FETCH_HEAD
+croot
+
+cd frameworks/av
+git fetch https://github.com/Lunaris-AOSP/frameworks_av test
+git reset --hard FETCH_HEAD
+croot
 
 #cd frameworks/native
 #git fetch https://github.com/Lunaris-AOSP/frameworks_native test
@@ -115,14 +120,19 @@ git reset --hard FETCH_HEAD
 croot
 
 cd packages/apps/Singularity 
-git fetch https://github.com/ryznstk/packages_apps_Singularity 16.2
+git fetch https://github.com/ryznstk/packages_apps_Singularity test
 git reset --hard FETCH_HEAD
 croot
 
-#cd vendor/lineage
-#git fetch https://github.com/Lunaris-AOSP/vendor_lineage 16.2
-#git reset --hard FETCH_HEAD
-#croot
+cd system/core
+git fetch https://github.com/Lunaris-AOSP/system_core.git test
+git reset --hard FETCH_HEAD
+croot
+
+cd vendor/lineage
+git fetch https://github.com/Lunaris-AOSP/vendor_lineage test
+git reset --hard FETCH_HEAD
+croot
 
 #cd vendor/extras
 #git fetch https://github.com/Lunaris-AOSP/vendor_extras test
