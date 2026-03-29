@@ -84,10 +84,10 @@ croot
 #git reset --hard FETCH_HEAD
 #croot
 
-#cd packages/apps/Launcher3
-#git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 test
-#git reset --hard FETCH_HEAD
-#croot
+cd packages/apps/Launcher3
+git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 test
+git reset --hard FETCH_HEAD
+croot
 
 #cd packages/apps/FaceUnlock
 #git fetch https://github.com/Lunaris-AOSP/packages_apps_FaceUnlock.git test
