@@ -74,10 +74,10 @@ croot
 #git reset --hard FETCH_HEAD
 #croot
 
-#cd device/lineage/sepolicy
-#git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy 16.2
-#git reset --hard FETCH_HEAD
-#croot
+cd device/lineage/sepolicy
+git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy 16.2
+git reset --hard FETCH_HEAD
+croot
 
 #cd hardware/interfaces
 #git fetch https://github.com/Lunaris-AOSP/hardware_interfaces.git test
@@ -109,10 +109,10 @@ git fetch https://github.com/Lunaris-AOSP/frameworks_av test
 git reset --hard FETCH_HEAD
 croot
 
-#cd frameworks/native
-#git fetch https://github.com/Lunaris-AOSP/frameworks_native test
-#git reset --hard FETCH_HEAD
-#croot
+cd frameworks/native
+git fetch https://github.com/Lunaris-AOSP/frameworks_native test
+git reset --hard FETCH_HEAD
+croot
 
 cd packages/apps/Settings
 git fetch https://github.com/ryznstk/packages_apps_Settings test
