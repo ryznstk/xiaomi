@@ -74,20 +74,20 @@ croot
 #git reset --hard FETCH_HEAD
 #croot
 
-cd device/lineage/sepolicy
-git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy 16.2
-git reset --hard FETCH_HEAD
-croot
+#cd device/lineage/sepolicy
+#git fetch https://github.com/Lunaris-AOSP/device_lineage_sepolicy 16.2
+#git reset --hard FETCH_HEAD
+#croot
 
 #cd hardware/interfaces
 #git fetch https://github.com/Lunaris-AOSP/hardware_interfaces.git test
 #git reset --hard FETCH_HEAD
 #croot
 
-cd packages/apps/Launcher3
-git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 test
-git reset --hard FETCH_HEAD
-croot
+#cd packages/apps/Launcher3
+#git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 test
+#git reset --hard FETCH_HEAD
+#croot
 
 #cd packages/apps/FaceUnlock
 #git fetch https://github.com/Lunaris-AOSP/packages_apps_FaceUnlock.git test
@@ -99,15 +99,15 @@ croot
 #git reset --hard FETCH_HEAD
 #croot
 
-cd frameworks/base
-git fetch https://github.com/Lunaris-AOSP/frameworks_base test
-git reset --hard FETCH_HEAD
-croot
+#cd frameworks/base
+#git fetch https://github.com/Lunaris-AOSP/frameworks_base test
+#git reset --hard FETCH_HEAD
+#croot
 
-cd frameworks/av
-git fetch https://github.com/Lunaris-AOSP/frameworks_av test
-git reset --hard FETCH_HEAD
-croot
+#cd frameworks/av
+#git fetch https://github.com/Lunaris-AOSP/frameworks_av test
+#git reset --hard FETCH_HEAD
+#croot
 
 #cd frameworks/native
 #git fetch https://github.com/Lunaris-AOSP/frameworks_native test
@@ -115,24 +115,24 @@ croot
 #croot
 
 cd packages/apps/Settings
-git fetch https://github.com/ryznstk/packages_apps_Settings test
+git fetch https://github.com/ryznstk/packages_apps_Settings 16.2
 git reset --hard FETCH_HEAD
 croot
 
-cd packages/apps/Singularity 
-git fetch https://github.com/Lunaris-AOSP/packages_apps_Singularity test
-git reset --hard FETCH_HEAD
-croot
+#cd packages/apps/Singularity 
+#git fetch https://github.com/Lunaris-AOSP/packages_apps_Singularity test
+#git reset --hard FETCH_HEAD
+#croot
 
-cd system/core
-git fetch https://github.com/Lunaris-AOSP/system_core.git test
-git reset --hard FETCH_HEAD
-croot
+#cd system/core
+#git fetch https://github.com/Lunaris-AOSP/system_core.git test
+#git reset --hard FETCH_HEAD
+#croot
 
-cd vendor/lineage
-git fetch https://github.com/Lunaris-AOSP/vendor_lineage test
-git reset --hard FETCH_HEAD
-croot
+#cd vendor/lineage
+#git fetch https://github.com/Lunaris-AOSP/vendor_lineage test
+#git reset --hard FETCH_HEAD
+#croot
 
 #cd vendor/extras
 #git fetch https://github.com/Lunaris-AOSP/vendor_extras test
