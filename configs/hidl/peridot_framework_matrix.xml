@@ -8,70 +8,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.aidlbgservice</name>
-        <interface>
-            <name>IBGService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.aon</name>
-        <interface>
-            <name>IAlwaysOn</name>
-            <instance>miaonservicehal</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.displayfeature_aidl</name>
-        <version>2</version>
-        <interface>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.dtool1</name>
-        <interface>
-            <name>IDtool</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.mlipay</name>
-        <interface>
-            <name>IMlipayService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.quickcamera</name>
-        <interface>
-            <name>IQuickCameraService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.fx.tunnel</name>
-        <interface>
-            <name>IMiFxTunnel</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.sensor.citsensorservice</name>
-        <interface>
-            <name>ICitSensorService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.display.mihwcextension</name>
-        <interface>
-            <name>IMiHwcExtension</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>vendor.lineage.touch</name>
         <version>1</version>
         <interface>
@@ -89,44 +25,6 @@
         <interface>
             <name>IFastCharge</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-</compatibility-matrix>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-            <version>2</version>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel</name>
-        <interface>
-            <name>IMiFxTunnel</name>
-            <instance>default</instance>
-            <version>1</version>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.mlipay.IMlipayService</name>
-        <interface>
-            <name>IMlipayService</name>
-            <instance>default</instance>
-            <version>1</version>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.quickcamera.IQuickCameraService</name>
-        <interface>
-            <name>IQuickCameraService</name>
-            <instance>default</instance>
-            <version>1</version>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.sensor.citsensorservice.ICitSensorService</name>
-        <interface>
-            <name>ICitSensorService</name>
-            <instance>default</instance>
-            <version>1</version>
         </interface>
     </hal>
 </compatibility-matrix>
