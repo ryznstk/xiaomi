@@ -6,6 +6,7 @@ rm -rf vendor/xiaomi/peridot
 git clone -b lineage-23.2 https://gitlab.com/blu96/proprietary-vendor-xiaomi-peridot-rb.git vendor/xiaomi/peridot
 
 # Kernel source (fresh clone)
+echo "Cloning kernel source tree..."
 rm -rf kernel/xiaomi/sm8635
 git clone -b nokpo --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
 
@@ -18,7 +19,7 @@ git clone -b lineage-23.2 --depth 1 https://github.com/peridot-dev/android_kerne
 # Hardware xiaomi (fresh clone)
 echo "Cloning hardware xiaomi source..."
 rm -rf hardware/xiaomi
-git clone -b lineage-23.2 https://github.com/ryznstk/android_hardware_xiaomi.git hardware/xiaomi
+git clone -b lineage-23.2 https://github.com/ryznstk/hardware_xiaomi_los.git hardware/xiaomi
 
 rm -rf packages/apps/XiaomiDolby
 
@@ -73,13 +74,15 @@ git fetch https://github.com/LineageOS/android_hardware_qcom-caf_common lineage-
 git reset --hard FETCH_HEAD
 croot
 
+rm -rf vendor/lineage-priv
+
 # Refresh signing keys
-if [ -d vendor/lineage-priv/keys ]; then
+if [ -d vendor/evolution-priv/keys ]; then
   echo "Removing existing signing keys..."
-  rm -rf vendor/lineage-priv/keys
+  rm -rf vendor/evolution-priv/keys
 fi
 echo "Cloning fresh signing keys..."
-git clone https://github.com/droidcore/private_key.git -b main vendor/lineage-priv/keys
+git clone https://github.com/droidcore/private_key.git -b evo vendor/evolution-priv/keys
 
 # Always back to root at the end
 if command -v croot &>/dev/null; then
