@@ -256,6 +256,3 @@ service fan_control_turn_off /vendor/bin/fan_service 0
     user root
     disabled
     oneshot
-
-# Enable suspend to RAM
-    write /sys/power/mem_sleep "deep"
