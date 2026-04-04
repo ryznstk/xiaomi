@@ -8,13 +8,13 @@ git clone -b lineage-23.2 https://gitlab.com/blu96/proprietary-vendor-xiaomi-per
 # Kernel source (fresh clone)
 echo "Cloning kernel source tree..."
 rm -rf kernel/xiaomi/sm8635
-git clone -b auto --depth 1 https://gitlab.com/blu96/kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
+git clone -b nokpo --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
 
 rm -rf kernel/xiaomi/sm8635-modules
-git clone -b lunaris --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
+git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
 
 rm -rf kernel/xiaomi/sm8635-devicetrees
-git clone -b lineage-23.2 --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
+git clone -b lineage-23.2 --depth 1 https://github.com/peridot-dev/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
 
 # Hardware xiaomi (fresh clone)
 echo "Cloning hardware xiaomi source..."
