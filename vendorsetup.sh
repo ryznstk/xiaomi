@@ -45,9 +45,6 @@ git fetch https://github.com/ryznstk/packages_apps_LMOFreeforms 16.2
 git reset --hard FETCH_HEAD
 croot
 
-rm -rf packages/apps/DepthWallpaperHelper
-
-
 rm -rf packages/apps/XiaomiParts
 
 # ViperFX
