@@ -57,7 +57,12 @@ rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
 
 cd system/sepolicy
-git fetch https://github.com/ryznstk/system_sepolicy.git bq2
+git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
+git reset --hard FETCH_HEAD
+croot
+
+cd packages/apps/Settings
+git fetch https://github.com/ryznstk/packages_apps_Settings 16.2
 git reset --hard FETCH_HEAD
 croot
 
@@ -71,15 +76,13 @@ git fetch https://github.com/LineageOS/android_hardware_qcom-caf_common lineage-
 git reset --hard FETCH_HEAD
 croot
 
-rm -rf vendor/lineage-priv
-
 # Refresh signing keys
-if [ -d vendor/evolution-priv/keys ]; then
+if [ -d vendor/lineage-priv/keys ]; then
   echo "Removing existing signing keys..."
-  rm -rf vendor/evolution-priv/keys
+  rm -rf vendor/lineage-priv/keys
 fi
 echo "Cloning fresh signing keys..."
-git clone https://github.com/droidcore/private_key.git -b evo vendor/evolution-priv/keys
+git clone https://github.com/droidcore/private_key.git -b main vendor/lineage-priv/keys
 
 # Always back to root at the end
 if command -v croot &>/dev/null; then
