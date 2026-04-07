@@ -19,7 +19,7 @@ git clone -b lineage-23.2 --depth 1 https://github.com/peridot-dev/android_kerne
 # Hardware xiaomi (fresh clone)
 echo "Cloning hardware xiaomi source..."
 rm -rf hardware/xiaomi
-git clone -b lineage-23.2 https://github.com/ryznstk/android_hardware_xiaomi.git hardware/xiaomi
+git clone -b lineage-23.2 https://github.com/ryznstk/hardware_xiaomi_los.git hardware/xiaomi
 
 rm -rf packages/apps/XiaomiDolby
 
@@ -72,6 +72,8 @@ cd hardware/qcom-caf/common
 git fetch https://github.com/LineageOS/android_hardware_qcom-caf_common lineage-23.2
 git reset --hard FETCH_HEAD
 croot
+
+rm -rf vendor/evolution-priv
 
 # Refresh signing keys
 if [ -d vendor/lineage-priv/keys ]; then
