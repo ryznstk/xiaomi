@@ -57,7 +57,7 @@ rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
 
 cd system/sepolicy
-git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
+git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git 16.2
 git reset --hard FETCH_HEAD
 croot
 
