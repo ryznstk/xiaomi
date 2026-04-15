@@ -60,12 +60,7 @@ rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
 
 cd system/sepolicy
-git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git 16.2
-git reset --hard FETCH_HEAD
-croot
-
-cd build/soong
-git fetch https://github.com/ryznstk/build_soong test
+git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
 git reset --hard FETCH_HEAD
 croot
 
@@ -115,7 +110,7 @@ croot
 #croot
 
 cd packages/apps/Settings
-git fetch https://github.com/ryznstk/packages_apps_Settings 16.2
+git fetch https://github.com/ryznstk/packages_apps_Settings test
 git reset --hard FETCH_HEAD
 croot
 
