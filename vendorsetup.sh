@@ -41,7 +41,7 @@ git clone https://github.com/ryznstk/packages_apps_GameBar.git packages/apps/Gam
 # LMO
 echo "fetching LMOfreeroam tree..."
 cd packages/apps/LMOFreeform
-git fetch https://github.com/ryznstk/packages_apps_LMOFreeforms 16.2
+git fetch https://github.com/ryznstk/packages_apps_LMOFreeforms test
 git reset --hard FETCH_HEAD
 croot
 
