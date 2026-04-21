@@ -6,7 +6,7 @@ rm -rf vendor/xiaomi/peridot
 git clone -b lineage-23.2 https://gitlab.com/blu96/proprietary-vendor-xiaomi-peridot-rb.git vendor/xiaomi/peridot
 
 rm -rf kernel/xiaomi/sm8635
-git clone -b auto2 --depth 1 https://gitlab.com/blu96/kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
+git clone -b auto --depth 1 https://gitlab.com/blu96/kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
 
 rm -rf kernel/xiaomi/sm8635-modules
 git clone -b lunaris --depth 1 https://github.com/ryznstk/android_kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
