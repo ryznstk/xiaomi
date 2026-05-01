@@ -56,6 +56,12 @@ echo "Cloning KProfiles..."
 rm -rf packages/apps/KProfiles
 git clone https://github.com/ryznstk/packages_apps_KProfiles.git packages/apps/KProfiles
 
+
+cd packages/apps/Launcher3
+git fetch https://github.com/Lunaris-AOSP/packages_apps_Launcher3 16.2
+git reset --hard FETCH_HEAD
+croot
+
 cd system/sepolicy
 git fetch https://github.com/ryznstk/lunaris_system_sepolicy.git test
 git reset --hard FETCH_HEAD
